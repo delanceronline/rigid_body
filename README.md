@@ -1,5 +1,9 @@
 # Physical Dynamics using OBB
 
+<p align="center">
+  <img src="./images/rigidbody.jpg"><br>
+</p>
+
 This demo simulates the visually (not physically) correct response of rigid bodies, using OBB as bounding volume.  It can be divided into two parts: 1) Collision detection between OBBs. 2) Non-penetration constraints among OBBs.  When two OBBs are found to be inter-penetrated, a restoring force (penalty) will be applied to both objects, so that  they adhere the non-penetration constraints.  I implemented the Separating Axis Theorem (SAT), from Gottschalk's work [1],  to handle the collision detection of OBBs and the  non-penetration constraint equation presented by David Baraff [2] for two bodies in colliding contact.
 
 In our case, as the intersection test is between two OBBs, according SAT, there are 15 possible directions for the separating axis: Nx_a, Ny_a, Nz_a, Nx_b, Ny_b, Nz_b, CrossProduct(Nx_a, Nx_b), CrossProduct(Nx_a, Ny_b), CrossProduct(Nx_a, Nz_b), CrossProduct(Ny_a, Nx_b), CrossProduct(Ny_a, Ny_b), CrossProduct(Ny_a, Nz_b), CrossProduct(Nz_a, Nx_b), CrossProduct(Nz_a, Ny_b) and CrossProduct(Nz_a, Nz_b).  If no separating axis exists in such directions, the OBB is intersecting with another OBB, so am impulse between them has to be applied at the point of contact.  Its direction is following the normal vector at the contact point and its amplitude can be solved using the equation below:
