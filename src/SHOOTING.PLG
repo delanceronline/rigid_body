@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: shooting - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/Script2.res" /d "NDEBUG" "D:\Developing\RigidBody\Script2.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/shooting.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Developing\RigidBody\BoundBox.cpp"
+"D:\Developing\RigidBody\DisplayList.cpp"
+"D:\Developing\RigidBody\DrawScene.cpp"
+"D:\Developing\RigidBody\DynamicsParameters.cpp"
+"D:\Developing\RigidBody\heckContact.cpp"
+"D:\Developing\RigidBody\maths.cpp"
+"D:\Developing\RigidBody\Matrix.cpp"
+"D:\Developing\RigidBody\MilkshapeModel.cpp"
+"D:\Developing\RigidBody\Model.cpp"
+"D:\Developing\RigidBody\Quaternion.cpp"
+"D:\Developing\RigidBody\shooting.cpp"
+"D:\Developing\RigidBody\ShootingScene.cpp"
+"D:\Developing\RigidBody\Timer.cpp"
+"D:\Developing\RigidBody\Vector.cpp"
+"D:\Developing\RigidBody\Vector3D.cpp"
+"D:\Developing\RigidBody\Win32Timer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glu32.lib glaux.lib glut32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/shooting.pdb" /machine:I386 /out:"Release/shooting.exe" 
+.\Release\BoundBox.obj
+.\Release\DisplayList.obj
+.\Release\DrawScene.obj
+.\Release\DynamicsParameters.obj
+.\Release\heckContact.obj
+.\Release\maths.obj
+.\Release\Matrix.obj
+.\Release\MilkshapeModel.obj
+.\Release\Model.obj
+.\Release\Quaternion.obj
+.\Release\shooting.obj
+.\Release\ShootingScene.obj
+.\Release\Timer.obj
+.\Release\Vector.obj
+.\Release\Vector3D.obj
+.\Release\Win32Timer.obj
+.\Release\Script2.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+BoundBox.cpp
+DisplayList.cpp
+DrawScene.cpp
+DynamicsParameters.cpp
+heckContact.cpp
+maths.cpp
+Matrix.cpp
+MilkshapeModel.cpp
+Model.cpp
+Quaternion.cpp
+shooting.cpp
+ShootingScene.cpp
+Timer.cpp
+Vector.cpp
+Vector3D.cpp
+Win32Timer.cpp
+Linking...
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+shooting.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
